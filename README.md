@@ -1,2 +1,3 @@
-# React sandbox 1
+# React tips
 
+`npm install` checks&install all dependencies
