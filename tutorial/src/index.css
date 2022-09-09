@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Arial, sans-serif;
+    background-color: azure;
+    color: #222;
+}
+
+img {
+    width: 100px;
+}
+
+.block-list {
+    width: 90vw;
+    max-width: 800px;
+    display: grid;
+    gap: 2rem;
+    /*border: 1px solid chocolate;*/
+    margin: 20px;
+}
+
+@media screen and (min-width: 630px) {
+    .block-list {
+        grid-template-columns: repeat(3, 1fr);
+        align-items: start;
+    }
+}
+
+.block-item {
+    background: beige;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+}
+
+.block-item h4 {
+    letter-spacing: 2px;
+}
