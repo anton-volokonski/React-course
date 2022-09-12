@@ -6,14 +6,14 @@ function BookList() {
     return (
         <section className='block-list'>
             {books.map((obj) => {
-                return <Book key={obj.id} book={obj} />
+                return <Book key={obj.id} bookObj={obj} />
             })}
         </section>
     )
 }
 
 const Book = (props) => {
-    const {imgLink, title, description} = props.book
+    const {imgLink, title, description} = props.bookObj
     return (
         <article className='block-item'>
             <img alt='' src={imgLink} />
